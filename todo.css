@@ -8,13 +8,59 @@
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
-  padding: 10px;
+  padding: 1rem;
 }
 .todo-app {
-  color:black;
-  width: 30vw;
-  height: 30vw;
+  color: black;
+  width: 35vw;
+  height: 35vw;
   background-color: aliceblue;
   margin: 5vw auto 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+span img {
+  height: 1.75rem;
+  width: 2rem;
+  padding-left: 5px;
+}
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+}
+#search {
+  border:none;
+  outline: none;
+  color: green;
+  background:#E3E3E3;
+}
+
+::placeholder {
+  color: green;
+}
+#button {
+  border: none;
+  outline: none;
+  color: green;
+  background-color:grey;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background:#E3E3E3;
+  margin: 0.5rem auto;
+  border-radius: 1.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+
+}
+.list-area {
+  margin: 2rem 0rem 0rem 0.25rem;
+}
+li {
+  list-style: none;
+  padding: 0.5rem 0rem;
 }
 
