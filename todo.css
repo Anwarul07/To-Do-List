@@ -5,62 +5,72 @@
   font-family: "Poppins", sans-serif;
 }
 .container {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 1rem;
 }
 .todo-app {
   color: black;
-  width: 35vw;
-  height: 35vw;
+  width: 60vw;
+  height: 60vw;
   background-color: aliceblue;
   margin: 5vw auto 0;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
 span img {
-  height: 1.75rem;
-  width: 2rem;
+  height: 2vw;
+  width: 4vw;
   padding-left: 5px;
 }
 .todo-app h2 {
+  margin-top: 2vw;
+  margin-left: 4vw;
+  font-size: 3vw;
   display: flex;
   align-items: center;
 }
 #search {
-  border:none;
+  font-size: 2.25vw;
+  border: none;
   outline: none;
   color: green;
-  background:#E3E3E3;
+  width: 100%;
+  background: #e3e3e3;
 }
 
 ::placeholder {
   color: green;
 }
 #button {
+  font-size: 2.25vw;
   border: none;
   outline: none;
   color: green;
-  background-color:grey;
-  border-radius: 1rem;
+  background-color: grey;
+  border-radius: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 .row {
+  margin-left: 3vw;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background:#E3E3E3;
-  margin: 0.5rem auto;
-  border-radius: 1.5rem;
-  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-
+  background: #e3e3e3;
+  margin-top: 4vw;
+  border-radius: 55px;
+  padding :1vw 1.5vw;
+  border: 2px solid red;
+  width: 90%;
 }
 .list-area {
-  margin: 2rem 0rem 0rem 0.25rem;
+  margin: 5vw 0 0 1vw;
 }
-li {
+li{
+  margin-left: 3vw;
+  margin-bottom: 0;
+  font-size: 2.5vw;
   list-style: none;
-  padding: 0.5rem 0rem;
+  padding: 0.25rem 0rem;
 }
-
