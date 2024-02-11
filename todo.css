@@ -20,8 +20,8 @@
   border-radius: 1rem;
 }
 span img {
-  height: 2vw;
-  width: 4vw;
+  height: 3vw;
+  width: 5vw;
   padding-left: 5px;
 }
 .todo-app h2 {
@@ -59,26 +59,27 @@ span img {
   text-align: center;
   background: #e3e3e3;
   margin-top: 4vw;
-  border-radius: 30px;
-  padding :1.25vw 1.75vw;
+  border-radius: 40px;
+  padding: 1.25vw 1.75vw;
   border: 2px solid red;
   width: 90%;
 }
 .list-area {
   margin: 5vw 0 0 1vw;
 }
-li{
+li {
   margin-left: 3vw;
   margin-bottom: 0;
   font-size: 2.5vw;
   list-style: none;
   padding: 0.25rem 0rem;
+  display: flex;
+  align-items: center;
 }
-ul li::before{
-  content: '';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  color: red;
-
+#tick {
+  border: 2px solid black;
+  height: 2.25vw;
+  width: 2.25vw;
+  border-radius: 50%;
+  margin-right: 1vw;
 }
