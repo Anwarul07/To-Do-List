@@ -51,6 +51,7 @@ span img {
   background-color: grey;
   border-radius: 1.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
+  cursor: pointer;
 }
 .row {
   margin-left: 3vw;
@@ -68,6 +69,7 @@ span img {
   margin: 5vw 0 0 1vw;
 }
 li {
+  cursor: pointer;
   margin-left: 3vw;
   margin-bottom: 0;
   font-size: 2.5vw;
@@ -76,10 +78,24 @@ li {
   display: flex;
   align-items: center;
 }
-#tick {
+.itick {
   border: 2px solid black;
   height: 2.25vw;
   width: 2.25vw;
   border-radius: 50%;
   margin-right: 1vw;
+}
+.cheked {
+  background: url("/files/red-ticked.png");
+  width: 2.25vw;
+  height: 2.25vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: line-through;
+}
+.line{
+  text-decoration: line-through;
 }
