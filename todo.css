@@ -44,14 +44,18 @@ span img {
   color: green;
 }
 #button {
+  width:10vw;
+  height: 5vw;
   font-size: 2.25vw;
   border: none;
   outline: none;
   color: green;
   background-color: grey;
-  border-radius: 1.5rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 4vw;
+  padding: 1vw 1vw 1vw 1vw;
   cursor: pointer;
+  position: relative;
+  left: 2.5vw;
 }
 .row {
   margin-left: 3vw;
@@ -60,8 +64,8 @@ span img {
   text-align: center;
   background: #e3e3e3;
   margin-top: 4vw;
-  border-radius: 40px;
-  padding: 1.25vw 1.75vw;
+  border-radius:5vw;
+  padding: 0vw 2.5vw;
   border: 2px solid red;
   width: 90%;
 }
