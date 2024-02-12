@@ -9,9 +9,12 @@ button.addEventListener("click", () => {
         let li = document.createElement("li");
 
         li.innerText = search.value;
-        list.appendChild(li)
+        list.appendChild(li);
 
+        li.addEventListener("click", () => {
+            li.classList.add("line")
+        })
+        search.value = ''
     }
 });
-
 
