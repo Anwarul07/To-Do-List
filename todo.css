@@ -106,9 +106,3 @@ li::before {
 .line {
   text-decoration: line-through;
 }
-.main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
