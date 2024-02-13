@@ -111,4 +111,6 @@ li::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 25px;
+  margin: 2vw;;
 }
