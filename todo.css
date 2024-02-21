@@ -72,7 +72,7 @@ span img {
 .list-area {
   margin: 5vw 0 0 1vw;
 }
-li {
+ ul li {
   cursor: pointer;
   margin-left: 3vw;
   margin-bottom: 0;
@@ -82,7 +82,7 @@ li {
   display: flex;
   align-items: center;
 }
-li::before {
+ul li::before {
   content: "";
   border: 2px solid black;
   height: 2.25vw;
@@ -100,9 +100,28 @@ li::before {
   border: none;
   outline: none;
   border-radius: 50%;
-  position: relative;
-  right: 0.25vw;
+  padding-left: 1.5vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw; 
+background-color: white;
+  /* position: relative; */
+  /* right: 0.25vw; */
 }
 .line {
   text-decoration: line-through;
+}
+
+ul li span {
+  position: absolute;
+  left: 70%;
+  width: 3vw;
+  height: 3vw;
+  color: grey;
+  font-size: 2.5vw;
+  text-align: center;
+  line-height: 3vw;
+  border-radius: 50%;
+}
+ul li span {
+  background: #edeef0;
 }
