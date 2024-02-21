@@ -10,20 +10,22 @@ button.addEventListener("click", () => {
 
         li.innerText = search.value;
         list.appendChild(li);
-        let span=document.createElement("span");
-        span.innerHTML="\u00d7";
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
         li.appendChild(span)
 
         li.addEventListener("click", () => {
-            li.classList.add("line");
-            li.classList.add("cheked")
-            li.style.borderColor='none'
-            // span.classList.remove("line")
+            li.classList.toggle("line");
+            li.classList.toggle("cheked");
         })
 
-       
+        span.addEventListener("click", () => {
+            list.removeChild(li)
+        })
+
+
     }
-        search.value = ''
+    search.value = ''
     
 });
 
