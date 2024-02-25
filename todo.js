@@ -1,6 +1,12 @@
 
 let button = document.querySelector("#button");
 let search = document.querySelector("#search");
+let list = document.querySelector(".list-area");
+let li = document.createElement("li");
+let span = document.createElement("span");
+
+
+
 button.addEventListener("click", () => {
     if (search.value === '') {
         alert("Pls Add any Task")
@@ -12,35 +18,31 @@ button.addEventListener("click", () => {
         list.appendChild(li);
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
-        li.appendChild(span)
-
-        li.addEventListener("click", () => {
-            li.classList.toggle("line");
-            li.classList.toggle("cheked");
-            save();
-
-        })
-
-        span.addEventListener("click", () => {
-            list.removeChild(li)
-            save();
-
-        })
-
+        li.appendChild(span);
 
     }
+
+
     search.value = ''
     save();
 
 
 });
 
+list.addEventListener("click", (e) => {
+    if (e.target.tagName === "LI") {
+        e.target.classList.toggle("cheked")
+        e.target.classList.toggle("line")
+
+    } else if (e.target.tagName === "SPAN") {
+        e.target.parentElement.remove();
+    }
+}, false);
+
 function save() {
-    let list = document.querySelector(".list-area");
     localStorage.setItem("data", list.innerHTML)
 }
-// function show(){
-//     let list = document.querySelector(".list-area");
-//     list.innerHTML=localStorage.getItem("data")
-// }
-// show()
+function show() {
+    list.innerHTML = localStorage.getItem("data")
+}
+show()
