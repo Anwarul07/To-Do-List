@@ -17,16 +17,30 @@ button.addEventListener("click", () => {
         li.addEventListener("click", () => {
             li.classList.toggle("line");
             li.classList.toggle("cheked");
+            save();
+
         })
 
         span.addEventListener("click", () => {
             list.removeChild(li)
+            save();
+
         })
 
 
     }
     search.value = ''
-    
+    save();
+
+
 });
 
-
+function save() {
+    let list = document.querySelector(".list-area");
+    localStorage.setItem("data", list.innerHTML)
+}
+// function show(){
+//     let list = document.querySelector(".list-area");
+//     list.innerHTML=localStorage.getItem("data")
+// }
+// show()
